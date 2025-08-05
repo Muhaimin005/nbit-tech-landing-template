@@ -8,43 +8,33 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* nbit technology brand colors */
-    --background: 60 100% 99%;
-    --foreground: 221 50% 27%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 60 100% 99%;
-    --card-foreground: 221 50% 27%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 60 100% 99%;
-    --popover-foreground: 221 50% 27%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221 50% 27%;
-    --primary-foreground: 60 100% 99%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 0 100% 37%;
-    --secondary-foreground: 60 100% 99%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 221 20% 95%;
-    --muted-foreground: 221 20% 45%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 0 100% 37%;
-    --accent-foreground: 60 100% 99%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 100% 99%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 221 30% 85%;
-    --input: 221 30% 85%;
-    --ring: 221 50% 27%;
-
-    /* Technology gradients */
-    --gradient-tech: linear-gradient(135deg, hsl(221, 50%, 27%), hsl(0, 100%, 37%));
-    --gradient-hero: linear-gradient(135deg, hsl(221, 50%, 15%), hsl(221, 50%, 27%));
-    --gradient-card: linear-gradient(145deg, hsl(60, 100%, 99%), hsl(221, 20%, 98%));
-    
-    /* Tech shadows */
-    --shadow-tech: 0 10px 30px -5px hsl(221, 50%, 27%, 0.3);
-    --shadow-glow: 0 0 40px hsl(0, 100%, 37%, 0.2);
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
 
