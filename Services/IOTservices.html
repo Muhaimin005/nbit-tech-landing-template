@@ -1,0 +1,82 @@
+---
+layout: default
+title: IOT Services
+css: iot.css
+js: service.js
+is_iot: true
+---
+    <!-- Hero Section -->
+   <section class="hero" id="hero" style="background-image: url({{'/assets/image/futuristic-smart-city-with-5g-global-network-technology.jpg'| relative_url }});">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Internet of Things (IoT) Services</h1>
+                <p>NBit Technology provides cutting-edge IoT solutions to help businesses embrace Industry 4.0 and thrive in the digital age.</p>
+            </div>
+        </div>
+    </section>
+
+       <!-- IoT Business Benefits Section -->
+    <section class="iot-benefits" style="margin-bottom: 0;">
+        <div class="container">
+            <h2>Why Choose Our IoT Solutions?</h2>
+            <div class="benefits-grid">
+
+                <!-- Efficiency & Automation -->
+                <div class="benefit-card">
+                    <i class="fa-solid fa-gears benefit-icon"></i>
+                    <h3>Improved Efficiency & Automation</h3>
+                    <p>Increase business efficiency by automating processes and streamlining operations, 
+                       allowing you to better manage your operational costs.</p>
+                </div>
+
+                <!-- Data-Driven Decisions -->
+                <div class="benefit-card">
+                    <i class="fa-solid fa-database benefit-icon"></i>
+                    <h3>Data-Driven Decisions</h3>
+                    <p>Make fast, data-driven decisions with access to real-time insights powered by 
+                       low-latency connectivity and intelligent IoT analytics.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fa-solid fa-users benefit-icon"></i>
+                    <h3>Customer Experience Enhancement</h3>
+                    <p>Deliver personalized and seamless customer experiences. With AI-driven IoT insights, 
+                       improve engagement and elevate customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart City Section -->
+    <section class="iot-benefits" style="margin-top:0 ;">
+            <div class="container">
+                <h2>My Smart City</h2>
+            <div class="benefits-grid">
+
+            <div class="benefit-card">
+                <i class="fa-solid fa-city benefit-icon"></i>
+                <h3>Improved Efficiency & Automation</h3>
+                <p>Our Smart City solutions are designed to transform urban spaces into safer and more connected environments. 
+                By integrating advanced technologies with a focus on transparency, efficiency, and sustainability, 
+                we enable governments and communities to enhance everyday living. Through active citizen participation 
+                and smarter resource management, we help modernise cities into liveable, resilient, and future-ready ecosystems.
+                </p>
+            </div>
+    </section>
+
+    <!-- Animation Script -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target); // animate once
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.benefit-card').forEach((card, i) => {
+            card.style.transitionDelay = `${i * 0.2}s`; // stagger effect
+            observer.observe(card);
+        });
+    </script>
+
